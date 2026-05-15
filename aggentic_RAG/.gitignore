@@ -1,0 +1,14 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.idea/
+node_modules/
+frontend/dist/
+*.local
+# Runtime data
+data/travel_vectordb/
+backend/data/*.db
+*.bak

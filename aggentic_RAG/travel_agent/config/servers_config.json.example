@@ -1,0 +1,51 @@
+{
+    "mcp_servers": [
+        {
+            "name": "12306 Server",
+            "url": "https://your-modelscope-host/your-deployment-id/mcp",
+            "transport": "streamable_http",
+            "description": "火车票查询 - ModelScope 示例",
+            "required": true
+        },
+        {
+            "name": "Gaode Server",
+            "url": "https://your-modelscope-host/your-deployment-id/mcp",
+            "transport": "streamable_http",
+            "description": "高德地图 - 需使用控制台为该 MCP 分配的独立 URL",
+            "required": true
+        },
+        {
+            "name": "bazi Server",
+            "url": "https://your-modelscope-host/your-deployment-id/mcp",
+            "transport": "streamable_http",
+            "description": "八字黄历",
+            "required": true
+        },
+        {
+            "name": "biying Server",
+            "url": "https://your-modelscope-host/your-deployment-id/mcp",
+            "transport": "streamable_http",
+            "description": "必应搜索 - 可选",
+            "required": false
+        },
+        {
+            "name": "flight Server",
+            "url": "https://your-modelscope-host/your-deployment-id/mcp",
+            "transport": "streamable_http",
+            "description": "航班查询 - 可选",
+            "required": false
+        }
+    ],
+    "agent": {
+        "name": "TravelPlannerAssistant",
+        "instructions": "你是一名专业的旅行规划智能助手。你可以帮助用户通过以下工具进行旅游规划：1) 12306查询 - 查询火车票信息；2) Gaode地图 - 路线规划和导航；3) 必应搜索 - 搜索最新旅游资讯；4) 八字工具 - 命理信息查询；5) 航班查询 - 查询航班信息。请根据用户需求调用相应工具，并生成详细的旅行方案。"
+    },
+    "_comment": {
+        "usage": "使用说明",
+        "step1": "复制此文件为 servers_config.json",
+        "step2": "将 url 替换为真实地址；ModelScope 推理 MCP 多为 streamable_http，见各服务详情页",
+        "step3": "transport 可选：streamable_http（ModelScope 等）或 sse（默认）",
+        "step4": "每个 MCP 部署应有独立 URL（路径中常含类似 fc2f5b352d4846 的实例 ID）；多个服务不能共用同一网关根路径",
+        "note": "旧版 SSE 网关可能仍以 /sse 结尾；OpenAI Agents SDK 对 streamable_http 使用 MCPServerStreamableHttp"
+    }
+}
