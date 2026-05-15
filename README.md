@@ -637,14 +637,5 @@ ToolDefinition(
 
 ---
 
-## 许可证
-
-本项目采用 MIT 许可证。
-
----
-
-## 联系方式
-
-该项目 Created by Alex，如有问题或建议，请提交 Issue 或联系项目维护者。
 
 **项目地址**: [https://github.com/a805026135/travel-planning-agent](https://github.com/a805026135/travel-planning-agent/)
