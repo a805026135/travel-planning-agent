@@ -23,7 +23,7 @@
 │                          │                                   │
 │  ┌───────────────────────┴──────────────────────────────┐   │
 │  │  AgentService → LangGraph                            │   │
-│  │  Planner → R1 Strategy → ReAct Loop → Synthesizer    │   │
+│  │  Planner →  Strategy → ReAct Loop → Synthesizer    │   │
 │  └──────────────────────────────────────────────────────┘   │
 │          │          │          │           │                │
 │  ┌───────┴──┐ ┌────┴────┐ ┌──┴─────┐ ┌──┴──────────┐      │
